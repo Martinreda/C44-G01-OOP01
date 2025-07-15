@@ -83,9 +83,30 @@ namespace Demo_01
              * internal
              */
 
-        #endregion
+            #endregion
+
+            #region 05 UD Interface
+            /*    ---what i can write inside ??
+            1-signature for property
+            2-signature for method
+            3-defualt implimented meathod => C# 8.0 . net core 2019
 
 
-    }
+            *    ---access modifier allowed inside?
+            without implimintion 
+            any access modifier work exepet private
+            defualt AD (public)
+            defualt implimented meathod any access is valied
+
+
+            * ---Defualt access modifier interface ?
+             internal
+             */
+
+
+            #endregion
+
+
+        }
     }
 }
