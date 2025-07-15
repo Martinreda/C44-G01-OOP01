@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Demo_01.UD_datatypes
 {
-    internal class myclass
+    internal struct MyStruct
     {
         // 1-Attribuate
-        public int Attribuate; 
+        public int Attribuate;
 
         // 2- function
-       public void Func01()
+        public void Func01()
         {
             Console.WriteLine(Attribuate);
         }
@@ -20,5 +20,6 @@ namespace Demo_01.UD_datatypes
         public int MyProperty { get; set; }
 
         //4- Events
-    }
+    
+}
 }
