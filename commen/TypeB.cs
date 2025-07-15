@@ -8,11 +8,11 @@ namespace commen
 {
     public class TypeB
     {
-        public TypeB()
-        {
-            TypeA typeA = new TypeA();
-            typeA.x = 1;
-            typeA.y = 5;
-        }
+        //public TypeB()
+        //{
+        //    TypeA typeA = new TypeA();
+        //    typeA.x = 1;
+        //    typeA.y = 5;
+        //}
     }
 }

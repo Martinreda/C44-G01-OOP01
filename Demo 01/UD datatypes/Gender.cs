@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Demo_01.UD_datatypes
 {
-    internal enum Enum
+    internal enum Gender
     {
-        //Labels
-        /*no access Modifeier*/ Sunday, //0
-        monday, //1
-        tuesday //2
+        Male,
+        female
     }
 }

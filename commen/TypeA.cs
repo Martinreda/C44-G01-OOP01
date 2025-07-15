@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace commen
 {
-    public class TypeA
-    {
-        private int x;
-        internal int y;
-        public int z;
-      public TypeA()
-        {
-            x = 1;
-            y = 2;
-            z = 3;
-        }
+    //public class TypeA
+    //{
+    //    private int x;
+    //    internal int y;
+    //    public int z;
+    //  public TypeA()
+    //    {
+    //        x = 1;
+    //        y = 2;
+    //        z = 3;
+    //    }
     }
 }

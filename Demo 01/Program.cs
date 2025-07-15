@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System;
+using Demo_01.UD_datatypes;
 
 namespace Demo_01
 {
@@ -117,6 +118,33 @@ namespace Demo_01
              * Defualt access modifier ? No access modifier
              Internal
              */
+            #endregion
+
+            #region 07 EX1 , EX 2 Enum
+           //EX 01 
+            Person person = new Person();
+            person.Id = 10;
+            person.Name = "Martin";
+            person.Gender = Gender.Male;
+
+            Console.WriteLine(person);
+
+            //Ex02
+            Grades G01 = new Grades();
+            
+
+            G01 = Grades.B;
+            G01 = (Grades)5;
+            //Console.WriteLine(G01);
+            if (G01==Grades.A || G01 == Grades.B)
+                Console.WriteLine("GOOD");
+            else
+                Console.WriteLine( "Bad");
+
+
+
+
+
             #endregion
 
 
