@@ -106,6 +106,19 @@ namespace Demo_01
 
             #endregion
 
+            #region 06 UD Enum
+            /*what i can write inside ?? 
+             Labels -- a sey of Names constans
+
+
+             * access modifier allowed inside?
+             No access allowed inside Enum
+             
+             * Defualt access modifier ? No access modifier
+             Internal
+             */
+            #endregion
+
 
         }
     }
