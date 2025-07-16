@@ -121,29 +121,79 @@ namespace Demo_01
             #endregion
 
             #region 07 EX1 , EX 2 Enum
-           //EX 01 
-            Person person = new Person();
-            person.Id = 10;
-            person.Name = "Martin";
-            person.Gender = Gender.Male;
+            //EX 01 
+            //Person person = new Person();
+            //person.Id = 10;
+            //person.Name = "Martin";
+            //person.Gender = Gender.Male;
 
-            Console.WriteLine(person);
+            //Console.WriteLine(person);
 
-            //Ex02
-            Grades G01 = new Grades();
-            
+            ////Ex02
+            //Grades G01 = new Grades();
 
-            G01 = Grades.B;
-            G01 = (Grades)5;
-            //Console.WriteLine(G01);
-            if (G01==Grades.A || G01 == Grades.B)
-                Console.WriteLine("GOOD");
+
+            //G01 = Grades.B;
+            //G01 = (Grades)5;
+            ////Console.WriteLine(G01);
+            //if (G01==Grades.A || G01 == Grades.B)
+            //    Console.WriteLine("GOOD");
+            //else
+            //    Console.WriteLine( "Bad");
+            #endregion
+
+            #region EX 03 Enum
+            /* permissions : Delete | Write | Excute */
+            Users user01 = new Users();
+            user01.iD = 10;
+            user01.Permissions = (permissions)4;
+            //Console.WriteLine( user01.Permissions);
+
+            Users user02 = new Users();
+
+            user02.iD = 20;
+            user02.Permissions = (permissions)2;
+            Console.WriteLine( user02.Permissions);
+
+            //bygm3 albainry number m4 2 + 8 la 
+
+            //add new permission => Bitwise operoteor ^ XOR operoter
+            user02.Permissions = user02.Permissions ^ permissions.read;
+            Console.WriteLine(user02.Permissions);
+
+            //deny permission with xor ^ 
+            //checked if have permisssion or not frist
+            user02.Permissions = user02.Permissions ^= permissions.write;
+            Console.WriteLine(user02.Permissions);
+
+            //check if user have excute or not
+            //if ((user02.Permissions & permissions.Delete) == permissions.Delete)
+            //    Console.WriteLine("have excute");
+            //else
+            //{
+            //    user02.Permissions = user02.Permissions ^ permissions.Delete;
+            //}
+            //Console.WriteLine(user02.Permissions);
+
+            //check with has flag 
+            bool haswrite = user02.Permissions.HasFlag(permissions.write);
+            if (haswrite)
+                Console.WriteLine("a");
             else
-                Console.WriteLine( "Bad");
+                Console.WriteLine("b");
 
+            // OR operoteor |
+            //check if permission exsit or not
+            //exiset =>do nothing
+            //not => add permission 
 
+            user02.Permissions = user02.Permissions | permissions.Delete;
+            Console.WriteLine(user02.Permissions);
+            // or if permission exist its ok if not will add it 
 
-
+            // ^ add
+            // ^= deny
+            // | if have ok not add it
 
             #endregion
 
